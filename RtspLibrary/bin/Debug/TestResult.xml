@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="mock-assembly.exe" fullname="C:/Users/osmin/Documents/visual studio 2015/Projects/RtspLibrary/RtspLibrary/bin/Debug/mock-assembly.exe" testcasecount="42" result="Failed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.676149" total="42" passed="27" failed="7" inconclusive="1" skipped="7" asserts="2" random-seed="386884613">
+  <command-line><![CDATA["C:\Users\osmin\Documents\visual studio 2015\Projects\RtspLibrary\RtspLibrary\bin\Debug\mock-assembly.exe" ]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1061" name="mock-assembly.exe" fullname="C:/Users/osmin/Documents/visual studio 2015/Projects/RtspLibrary/RtspLibrary/bin/Debug/mock-assembly.exe" runstate="Runnable" testcasecount="42" result="Failed" site="Child" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.676149" total="42" passed="27" failed="7" inconclusive="1" skipped="7" asserts="2">
+    <environment framework-version="3.2.0.0" clr-version="2.0.50727.6421" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\osmin\Documents\visual studio 2015\Projects\RtspLibrary\RtspLibrary\bin\Debug" machine-name="OSMAN" user="Osman" user-domain="OSMAN" culture="en-CA" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\osmin\Documents\visual studio 2015\Projects\RtspLibrary\RtspLibrary\bin\Debug" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="8904" />
+      <property name="_APPDOMAIN" value="mock-assembly.exe" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1062" name="NUnit" fullname="NUnit" runstate="Runnable" testcasecount="42" result="Failed" site="Child" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.565506" total="42" passed="27" failed="7" inconclusive="1" skipped="7" asserts="2">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1063" name="Tests" fullname="NUnit.Tests" runstate="Runnable" testcasecount="42" result="Failed" site="Child" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.565119" total="42" passed="27" failed="7" inconclusive="1" skipped="7" asserts="2">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1066" name="Assemblies" fullname="NUnit.Tests.Assemblies" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.392186" total="8" passed="1" failed="4" inconclusive="1" skipped="2" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1052" name="MockTestFixture" fullname="NUnit.Tests.Assemblies.MockTestFixture" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.371385" total="8" passed="1" failed="4" inconclusive="1" skipped="2" asserts="0">
+            <properties>
+              <property name="Description" value="Fake Test Fixture" />
+              <property name="Category" value="FixtureCategory" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1057" name="ExplicitTest" fullname="NUnit.Tests.Assemblies.MockTestFixture.ExplicitTest" methodname="ExplicitTest" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="Explicit" seed="1548583897" result="Skipped" label="Explicit" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.005200" asserts="0" />
+            <test-case id="1055" name="FailingTest" fullname="NUnit.Tests.Assemblies.MockTestFixture.FailingTest" methodname="FailingTest" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="Runnable" seed="1548732413" result="Failed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.232981" asserts="0">
+              <failure>
+                <message><![CDATA[Intentional failure]]></message>
+                <stack-trace><![CDATA[at NUnit.Tests.Assemblies.MockTestFixture.FailingTest()
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1056" name="IgnoreTest" fullname="NUnit.Tests.Assemblies.MockTestFixture.IgnoreTest" methodname="IgnoreTest" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="Ignored" seed="105033491" result="Skipped" label="Ignored" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000052" asserts="0">
+              <properties>
+                <property name="_SKIPREASON" value="Ignore Message" />
+              </properties>
+              <reason>
+                <message><![CDATA[Ignore Message]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1059" name="InconclusiveTest" fullname="NUnit.Tests.Assemblies.MockTestFixture.InconclusiveTest" methodname="InconclusiveTest" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="Runnable" seed="1141276088" result="Inconclusive" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.002020" asserts="0">
+              <reason>
+                <message><![CDATA[No valid data]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1054" name="NonPublicTest" fullname="NUnit.Tests.Assemblies.MockTestFixture.NonPublicTest" methodname="NonPublicTest" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="NotRunnable" seed="953557922" result="Failed" label="Invalid" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000621" asserts="0">
+              <properties>
+                <property name="_SKIPREASON" value="Method is not public" />
+              </properties>
+              <failure>
+                <message><![CDATA[Method is not public]]></message>
+              </failure>
+            </test-case>
+            <test-case id="1058" name="NotRunnableTest" fullname="NUnit.Tests.Assemblies.MockTestFixture.NotRunnableTest" methodname="NotRunnableTest" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="NotRunnable" seed="438749011" result="Failed" label="Invalid" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000025" asserts="0">
+              <properties>
+                <property name="_SKIPREASON" value="No arguments were provided" />
+              </properties>
+              <failure>
+                <message><![CDATA[No arguments were provided]]></message>
+              </failure>
+            </test-case>
+            <test-case id="1053" name="TestWithDescription" fullname="NUnit.Tests.Assemblies.MockTestFixture.TestWithDescription" methodname="TestWithDescription" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="Runnable" seed="657009205" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000776" asserts="0">
+              <properties>
+                <property name="Description" value="Mock Test #1" />
+                <property name="Category" value="MockCategory" />
+                <property name="Severity" value="Critical" />
+              </properties>
+            </test-case>
+            <test-case id="1060" name="TestWithException" fullname="NUnit.Tests.Assemblies.MockTestFixture.TestWithException" methodname="TestWithException" classname="NUnit.Tests.Assemblies.MockTestFixture" runstate="Runnable" seed="1687081151" result="Failed" label="Error" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.042466" asserts="0">
+              <failure>
+                <message><![CDATA[System.Exception : Intentional Exception]]></message>
+                <stack-trace><![CDATA[   at NUnit.Tests.Assemblies.MockTestFixture.TestWithException()]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestFixture" id="1007" name="BadFixture" fullname="NUnit.Tests.BadFixture" classname="NUnit.Tests.BadFixture" runstate="NotRunnable" testcasecount="1" result="Failed" label="Invalid" site="SetUp" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.004637" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="_SKIPREASON" value="No suitable constructor was found" />
+          </properties>
+          <failure>
+            <message><![CDATA[No suitable constructor was found]]></message>
+          </failure>
+          <test-case id="1008" name="SomeTest" fullname="NUnit.Tests.BadFixture.SomeTest" methodname="SomeTest" classname="NUnit.Tests.BadFixture" runstate="Runnable" seed="1323870426" result="Failed" label="Invalid" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+            <failure>
+              <message><![CDATA[OneTimeSetUp: No suitable constructor was found]]></message>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1030" name="CDataTestFixure" fullname="NUnit.Tests.CDataTestFixure" classname="NUnit.Tests.CDataTestFixure" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.012368" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1034" name="DemonstrateIllegalSequenceAtEndOfFailureMessage" fullname="NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceAtEndOfFailureMessage" methodname="DemonstrateIllegalSequenceAtEndOfFailureMessage" classname="NUnit.Tests.CDataTestFixure" runstate="Runnable" seed="1390597427" result="Failed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000791" asserts="0">
+            <failure>
+              <message><![CDATA[The CDATA was: <![CDATA[ My <xml> ]]]]><![CDATA[>]]></message>
+              <stack-trace><![CDATA[at NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceAtEndOfFailureMessage()
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1032" name="DemonstrateIllegalSequenceAtEndOfSuccessMessage" fullname="NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceAtEndOfSuccessMessage" methodname="DemonstrateIllegalSequenceAtEndOfSuccessMessage" classname="NUnit.Tests.CDataTestFixure" runstate="Runnable" seed="79304597" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.002178" asserts="0">
+            <reason>
+              <message><![CDATA[The CDATA was: <![CDATA[ My <xml> ]]]]><![CDATA[>]]></message>
+            </reason>
+          </test-case>
+          <test-case id="1033" name="DemonstrateIllegalSequenceInFailureMessage" fullname="NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceInFailureMessage" methodname="DemonstrateIllegalSequenceInFailureMessage" classname="NUnit.Tests.CDataTestFixure" runstate="Runnable" seed="1565032323" result="Failed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000867" asserts="0">
+            <failure>
+              <message><![CDATA[Deliberate failure to illustrate ]]]]><![CDATA[> in message ]]></message>
+              <stack-trace><![CDATA[at NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceInFailureMessage()
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1031" name="DemonstrateIllegalSequenceInSuccessMessage" fullname="NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceInSuccessMessage" methodname="DemonstrateIllegalSequenceInSuccessMessage" classname="NUnit.Tests.CDataTestFixure" runstate="Runnable" seed="1196887609" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000802" asserts="0">
+            <reason>
+              <message><![CDATA[Deliberate failure to illustrate ]]]]><![CDATA[> in message ]]></message>
+            </reason>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1004" name="ExplicitFixture" fullname="NUnit.Tests.ExplicitFixture" classname="NUnit.Tests.ExplicitFixture" runstate="Explicit" testcasecount="2" result="Skipped" label="Explicit" site="SetUp" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000145" total="2" passed="0" failed="0" inconclusive="0" skipped="2" asserts="0">
+          <test-case id="1005" name="Test1" fullname="NUnit.Tests.ExplicitFixture.Test1" methodname="Test1" classname="NUnit.Tests.ExplicitFixture" runstate="Runnable" seed="332551961" result="Skipped" label="Explicit" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+            <reason>
+              <message><![CDATA[OneTimeSetUp: ]]></message>
+            </reason>
+          </test-case>
+          <test-case id="1006" name="Test2" fullname="NUnit.Tests.ExplicitFixture.Test2" methodname="Test2" classname="NUnit.Tests.ExplicitFixture" runstate="Runnable" seed="458445963" result="Skipped" label="Explicit" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+            <reason>
+              <message><![CDATA[OneTimeSetUp: ]]></message>
+            </reason>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1009" name="FixtureWithTestCases" fullname="NUnit.Tests.FixtureWithTestCases" classname="NUnit.Tests.FixtureWithTestCases" runstate="Runnable" testcasecount="4" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.085451" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="2">
+          <test-suite type="GenericMethod" id="1015" name="GenericMethod" fullname="NUnit.Tests.FixtureWithTestCases.GenericMethod" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.002549" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1013" name="GenericMethod&lt;Int32&gt;(2,4)" fullname="NUnit.Tests.FixtureWithTestCases.GenericMethod&lt;Int32&gt;(2,4)" methodname="GenericMethod" classname="NUnit.Tests.FixtureWithTestCases" runstate="Runnable" seed="421480137" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000393" asserts="0" />
+            <test-case id="1014" name="GenericMethod&lt;Double&gt;(9.2d,11.7d)" fullname="NUnit.Tests.FixtureWithTestCases.GenericMethod&lt;Double&gt;(9.2d,11.7d)" methodname="GenericMethod" classname="NUnit.Tests.FixtureWithTestCases" runstate="Runnable" seed="963478164" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:33Z" duration="0.000234" asserts="0" />
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1012" name="MethodWithParameters" fullname="NUnit.Tests.FixtureWithTestCases.MethodWithParameters" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.082295" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2">
+            <test-case id="1010" name="MethodWithParameters(2,2)" fullname="NUnit.Tests.FixtureWithTestCases.MethodWithParameters(2,2)" methodname="MethodWithParameters" classname="NUnit.Tests.FixtureWithTestCases" runstate="Runnable" seed="1355097167" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.080905" asserts="1" />
+            <test-case id="1011" name="MethodWithParameters(9,11)" fullname="NUnit.Tests.FixtureWithTestCases.MethodWithParameters(9,11)" methodname="MethodWithParameters" classname="NUnit.Tests.FixtureWithTestCases" runstate="Runnable" seed="213326761" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000111" asserts="1" />
+          </test-suite>
+        </test-suite>
+        <test-suite type="GenericFixture" id="1029" name="GenericFixture&lt;T&gt;" fullname="NUnit.Tests.GenericFixture&lt;T&gt;" runstate="Runnable" testcasecount="4" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.485402" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestFixture" id="1026" name="GenericFixture&lt;Double&gt;(11.5d)" fullname="NUnit.Tests.GenericFixture&lt;Double&gt;(11.5d)" classname="NUnit.Tests.GenericFixture`1" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.002608" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1027" name="Test1" fullname="NUnit.Tests.GenericFixture&lt;Double&gt;(11.5d).Test1" methodname="Test1" classname="NUnit.Tests.GenericFixture`1" runstate="Runnable" seed="1580158007" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000399" asserts="0" />
+            <test-case id="1028" name="Test2" fullname="NUnit.Tests.GenericFixture&lt;Double&gt;(11.5d).Test2" methodname="Test2" classname="NUnit.Tests.GenericFixture`1" runstate="Runnable" seed="1931312539" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000308" asserts="0" />
+          </test-suite>
+          <test-suite type="TestFixture" id="1023" name="GenericFixture&lt;Int32&gt;(5)" fullname="NUnit.Tests.GenericFixture&lt;Int32&gt;(5)" classname="NUnit.Tests.GenericFixture`1" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.005889" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1024" name="Test1" fullname="NUnit.Tests.GenericFixture&lt;Int32&gt;(5).Test1" methodname="Test1" classname="NUnit.Tests.GenericFixture`1" runstate="Runnable" seed="703520303" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000246" asserts="0" />
+            <test-case id="1025" name="Test2" fullname="NUnit.Tests.GenericFixture&lt;Int32&gt;(5).Test2" methodname="Test2" classname="NUnit.Tests.GenericFixture`1" runstate="Runnable" seed="2055237640" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000268" asserts="0" />
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestFixture" id="1000" name="IgnoredFixture" fullname="NUnit.Tests.IgnoredFixture" classname="NUnit.Tests.IgnoredFixture" runstate="Ignored" testcasecount="3" result="Skipped" label="Ignored" site="SetUp" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000106" total="3" passed="0" failed="0" inconclusive="0" skipped="3" asserts="0">
+          <properties>
+            <property name="_SKIPREASON" value="BECAUSE" />
+          </properties>
+          <reason>
+            <message><![CDATA[BECAUSE]]></message>
+          </reason>
+          <test-case id="1001" name="Test1" fullname="NUnit.Tests.IgnoredFixture.Test1" methodname="Test1" classname="NUnit.Tests.IgnoredFixture" runstate="Runnable" seed="798259755" result="Skipped" label="Ignored" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+            <reason>
+              <message><![CDATA[OneTimeSetUp: BECAUSE]]></message>
+            </reason>
+          </test-case>
+          <test-case id="1002" name="Test2" fullname="NUnit.Tests.IgnoredFixture.Test2" methodname="Test2" classname="NUnit.Tests.IgnoredFixture" runstate="Runnable" seed="202129304" result="Skipped" label="Ignored" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+            <reason>
+              <message><![CDATA[OneTimeSetUp: BECAUSE]]></message>
+            </reason>
+          </test-case>
+          <test-case id="1003" name="Test3" fullname="NUnit.Tests.IgnoredFixture.Test3" methodname="Test3" classname="NUnit.Tests.IgnoredFixture" runstate="Runnable" seed="575529885" result="Skipped" label="Ignored" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+            <reason>
+              <message><![CDATA[OneTimeSetUp: BECAUSE]]></message>
+            </reason>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedFixture" id="1022" name="ParameterizedFixture" fullname="NUnit.Tests.ParameterizedFixture" runstate="Runnable" testcasecount="4" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.507528" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestFixture" id="1019" name="ParameterizedFixture(42)" fullname="NUnit.Tests.ParameterizedFixture(42)" classname="NUnit.Tests.ParameterizedFixture" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.006910" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1020" name="Test1" fullname="NUnit.Tests.ParameterizedFixture(42).Test1" methodname="Test1" classname="NUnit.Tests.ParameterizedFixture" runstate="Runnable" seed="294301268" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000413" asserts="0" />
+            <test-case id="1021" name="Test2" fullname="NUnit.Tests.ParameterizedFixture(42).Test2" methodname="Test2" classname="NUnit.Tests.ParameterizedFixture" runstate="Runnable" seed="1620750620" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000386" asserts="0" />
+          </test-suite>
+          <test-suite type="TestFixture" id="1016" name="ParameterizedFixture(5)" fullname="NUnit.Tests.ParameterizedFixture(5)" classname="NUnit.Tests.ParameterizedFixture" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.015235" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1017" name="Test1" fullname="NUnit.Tests.ParameterizedFixture(5).Test1" methodname="Test1" classname="NUnit.Tests.ParameterizedFixture" runstate="Runnable" seed="211985103" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000092" asserts="0" />
+            <test-case id="1018" name="Test2" fullname="NUnit.Tests.ParameterizedFixture(5).Test2" methodname="Test2" classname="NUnit.Tests.ParameterizedFixture" runstate="Runnable" seed="591261833" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000052" asserts="0" />
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestSuite" id="1065" name="Singletons" fullname="NUnit.Tests.Singletons" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.509679" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestFixture" id="1050" name="OneTestCase" fullname="NUnit.Tests.Singletons.OneTestCase" classname="NUnit.Tests.Singletons.OneTestCase" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.002099" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1051" name="TestCase" fullname="NUnit.Tests.Singletons.OneTestCase.TestCase" methodname="TestCase" classname="NUnit.Tests.Singletons.OneTestCase" runstate="Runnable" seed="129833087" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000382" asserts="0" />
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestSuite" id="1064" name="TestAssembly" fullname="NUnit.Tests.TestAssembly" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-04-14 18:39:33Z" end-time="2016-04-14 18:39:34Z" duration="0.518895" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestFixture" id="1048" name="MockTestFixture" fullname="NUnit.Tests.TestAssembly.MockTestFixture" classname="NUnit.Tests.TestAssembly.MockTestFixture" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.008539" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1049" name="MyTest" fullname="NUnit.Tests.TestAssembly.MockTestFixture.MyTest" methodname="MyTest" classname="NUnit.Tests.TestAssembly.MockTestFixture" runstate="Runnable" seed="107278582" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000403" asserts="0" />
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestFixture" id="1035" name="TestNameEscaping" fullname="NUnit.Tests.TestNameEscaping" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" testcasecount="10" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.026171" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1041" name="MustBeEscaped" fullname="NUnit.Tests.TestNameEscaping.MustBeEscaped" runstate="Runnable" testcasecount="5" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.010215" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1036" name="MustBeEscaped(&quot;&lt; left bracket&quot;)" fullname="NUnit.Tests.TestNameEscaping.MustBeEscaped(&quot;&lt; left bracket&quot;)" methodname="MustBeEscaped" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="1231727827" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000348" asserts="0" />
+            <test-case id="1037" name="MustBeEscaped(&quot;&gt; right bracket&quot;)" fullname="NUnit.Tests.TestNameEscaping.MustBeEscaped(&quot;&gt; right bracket&quot;)" methodname="MustBeEscaped" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="866290569" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000047" asserts="0" />
+            <test-case id="1038" name="MustBeEscaped(&quot;'single quote'&quot;)" fullname="NUnit.Tests.TestNameEscaping.MustBeEscaped(&quot;'single quote'&quot;)" methodname="MustBeEscaped" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="52758991" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000056" asserts="0" />
+            <test-case id="1039" name="MustBeEscaped(&quot;\&quot;double quote\&quot;&quot;)" fullname="NUnit.Tests.TestNameEscaping.MustBeEscaped(&quot;\&quot;double quote\&quot;&quot;)" methodname="MustBeEscaped" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="1262715352" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000033" asserts="0" />
+            <test-case id="1040" name="MustBeEscaped(&quot;&amp;amp&quot;)" fullname="NUnit.Tests.TestNameEscaping.MustBeEscaped(&quot;&amp;amp&quot;)" methodname="MustBeEscaped" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="1923791459" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000075" asserts="0" />
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1047" name="MustBeEscaped_CustomName" fullname="NUnit.Tests.TestNameEscaping.MustBeEscaped_CustomName" runstate="Runnable" testcasecount="5" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.014856" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-case id="1042" name="&lt;" fullname="NUnit.Tests.TestNameEscaping.&lt;" methodname="MustBeEscaped_CustomName" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="1901627434" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000373" asserts="0" />
+            <test-case id="1043" name="&gt;" fullname="NUnit.Tests.TestNameEscaping.&gt;" methodname="MustBeEscaped_CustomName" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="1586204435" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000097" asserts="0" />
+            <test-case id="1044" name="'" fullname="NUnit.Tests.TestNameEscaping.'" methodname="MustBeEscaped_CustomName" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="1069402004" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000038" asserts="0" />
+            <test-case id="1045" name="&quot;" fullname="NUnit.Tests.TestNameEscaping.&quot;" methodname="MustBeEscaped_CustomName" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="1835946489" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000084" asserts="0" />
+            <test-case id="1046" name="&amp;" fullname="NUnit.Tests.TestNameEscaping.&amp;" methodname="MustBeEscaped_CustomName" classname="NUnit.Tests.TestNameEscaping" runstate="Runnable" seed="142881592" result="Passed" start-time="2016-04-14 18:39:34Z" end-time="2016-04-14 18:39:34Z" duration="0.000026" asserts="0" />
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

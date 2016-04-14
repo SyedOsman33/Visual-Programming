@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A39ED50-80A2-42EE-AB22-3BC83AF87126}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RtspLibrary</RootNamespace>
+    <AssemblyName>RtspLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nlog">
+      <HintPath>..\..\..\..\..\Desktop\RTP APi\dlls\nlog.dll</HintPath>
+    </Reference>
+    <Reference Include="nsubstitute">
+      <HintPath>..\..\..\..\..\Desktop\RTP APi\nsubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.engine">
+      <HintPath>..\..\..\..\..\Desktop\RTSPLibrary\DLLs\bin\nunit.engine.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.engine.api">
+      <HintPath>..\..\..\..\..\Desktop\RTSPLibrary\DLLs\bin\nunit.engine.api.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\..\Desktop\RTSPLibrary\DLLs\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks">
+      <HintPath>..\..\..\..\..\Desktop\RTP APi\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit3-console.tests">
+      <HintPath>..\..\..\..\..\Desktop\RTSPLibrary\DLLs\bin\nunit3-console.tests.dll</HintPath>
+    </Reference>
+    <Reference Include="nunitlite">
+      <HintPath>..\..\..\..\..\Desktop\RTSPLibrary\DLLs\bin\nunitlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IRTSPTransport.cs" />
+    <Compile Include="RtspListner.cs" />
+    <Compile Include="Messages\PortCouple.cs" />
+    <Compile Include="Messages\RTSPChunk.cs" />
+    <Compile Include="Messages\RTSPData.cs" />
+    <Compile Include="Messages\RTSPHeaderNames.cs" />
+    <Compile Include="Messages\RTSPMessage.cs" />
+    <Compile Include="Messages\RTSPRequest.cs" />
+    <Compile Include="Messages\RTSPRequestOptions.cs" />
+    <Compile Include="Messages\RTSPRequestPlay.cs" />
+    <Compile Include="Messages\RTSPRequestSetup.cs" />
+    <Compile Include="Messages\RTSPResponse.cs" />
+    <Compile Include="Messages\RTSPTransport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RTSPMessageEventArgs.cs" />
+    <Compile Include="RTSPTCPTransport.cs" />
+    <Compile Include="RTSPUtils.cs" />
+    <Compile Include="SDP\Attribut.cs" />
+    <Compile Include="SDP\AttributRtpMap.cs" />
+    <Compile Include="SDP\Bandwidth.cs" />
+    <Compile Include="SDP\Connection.cs" />
+    <Compile Include="SDP\ConnectionIP4.cs" />
+    <Compile Include="SDP\ConnectionIP6.cs" />
+    <Compile Include="SDP\EncriptionKey.cs" />
+    <Compile Include="SDP\Media.cs" />
+    <Compile Include="SDP\Origin.cs" />
+    <Compile Include="SDP\SdpFile.cs" />
+    <Compile Include="SDP\SdpTimeZone.cs" />
+    <Compile Include="SDP\Timing.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
