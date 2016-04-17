@@ -38,6 +38,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NLog.2.1.0\lib\net40\NLog.dll</HintPath>
     </Reference>
+    <Reference Include="Rtsp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RTP APi\dlls\Rtsp.dll</HintPath>
+    </Reference>
+    <Reference Include="RtspMultiplexer, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RTP APi\dlls\RtspMultiplexer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,12 +63,6 @@
     <Compile Include="RtspSession.cs" />
     <Compile Include="TcpToUdpForwader.cs" />
     <Compile Include="UdpForwarder.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RTSP\Rtsp.csproj">
-      <Project>{0AD96152-EB0C-4F31-B4F4-583CE88A5046}</Project>
-      <Name>Rtsp</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">
