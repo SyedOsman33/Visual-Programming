@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>OSMANSYED</Machine>
+    <WindowsUser>OSMAN SYED</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>208a7846-0d8b-4369-a11d-4584340d5b35</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\bin\Debug\RtmpClient.Windows.exe">
+      <PackagePath>RtmpClient.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\bin\Debug\RtmpClient.Windows.xr.xml">
+      <PackagePath>RtmpClient.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\osman syed\documents\visual studio 2015\Projects\RtmpClient\RtmpClient\RtmpClient.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
