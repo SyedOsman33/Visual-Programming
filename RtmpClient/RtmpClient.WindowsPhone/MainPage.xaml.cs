@@ -13,6 +13,11 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Mntone.Rtmp;
+using Mntone.Data;
+using Windows.Media;
+using Mntone.Rtmp.Client;
+using Windows.UI;
+using Windows.UI.Core;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace RtmpClient
@@ -45,12 +50,103 @@ namespace RtmpClient
             // this event is handled for you.
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        Mntone.Rtmp.RtmpUri rtmpUri;
+
+        private async void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Mntone.Rtmp.RtmpUri rtmpUri;
-            rtmpUri = new RtmpUri(textBox.Text);
-           // Uri.CheckHostName(textBox.Text);            
+            
+
         }
 
+
+        MediaElement elem = new MediaElement();
+
+        public async void OnStart(object sender, SimpleVideoClientStartedEventArgs VideoStart)
+        {
+            Windows.UI.Core.CoreDispatcher dis = CoreWindow.GetForCurrentThread().Dispatcher;
+            CoreWindow wiw = CoreWindow.GetForCurrentThread();
+            await wiw.Dispatcher.RunAsync(CoreDispatcherPriority.High,
+                ref new DispatchedHandler(() =>
+                {
+                    
+                    elem.SetMediaStreamSource(VideoStart.MediaStreamSource);
+                    elem.CurrentStateChanged += 
+
+                }
+            ));
+        }
+
+        private void Elem_CurrentStateChanged(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnCSStateChange(object sender, RoutedEventArgs a)
+        {
+            ProgressRing ring = new ProgressRing();
+
+            switch (elem.CurrentState)
+            {
+                case MediaElementState.Playing:
+                    ring.Visibility = Visibility.Collapsed;
+                    ring.IsActive = false;
+                    break;
+
+                case MediaElementState.Buffering:
+                    ring.IsActive = true;
+                    ring.Visibility = Visibility.Visible;
+                    break;
+            }
+
+
+            throw new NotImplementedException();
+        }
+
+        
+
+
+        
+                            
+
+
+
+
+                /*
+                MediaElement elem = new MediaElement();
+                elem.SetMediaStreamSource(VideoStart.MediaStreamSource);
+                elem.CurrentStateChanged += new RoutedEventHandler(this, //OnCurrentStateChanged); 
+                */
+
+            }
+             //dis += MediaElement.
+            //await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, ref new DispatchedHandler([]);
+        }
+
+        private async void Stream_Click(object sender, RoutedEventArgs e)
+        {
+            Mntone.Rtmp.RtmpUri rtmpUri;
+
+            
+            rtmpUri = new RtmpUri(textBox1.Text);
+            // Uri.CheckHostName(textBox.Text);     
+            rtmpUri.Instance = "AudioStream.sdp";
+            Mntone.Rtmp.Client.SimpleVideoClient AudioVideoClient = null;
+            await AudioVideoClient.ConnectAsync(rtmpUri);
+
+
+            Mntone.Rtmp.Media.AudioFormat wavAudio;
+            Mntone.Rtmp.Media.AudioInfo wav1;
+            Windows.Media.SystemMediaTransportControls medi = null;
+            MediaElement audio = new MediaElement();
+
+            Mntone.Rtmp.Client.SimpleVideoClient client = new Mntone.Rtmp.Client.SimpleVideoClient();
+
+            //client.Started += new EventHandler<SimpleVideoClientStartedEventArgs>()
+
+            
+              
+        
+          
+        }
     }
 }

@@ -9,8 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="Stream" Content="StartStream" HorizontalAlignment="Left" Margin="147,530,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="41.664,468.014,0,0" TextWrapping="Wrap" Text="rtmp://" VerticalAlignment="Top" Width="323" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" TextChanged="textBox_TextChanged">
+        <Button x:Name="Stream" Content="StartStream" HorizontalAlignment="Left" Margin="147,530,0,0" VerticalAlignment="Top" Click="Stream_Click"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="41.664,468.014,0,0" TextWrapping="Wrap" Text="rtmp://" VerticalAlignment="Top" Width="323" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" TextChanged="textBox_TextChanged">
             <TextBox.RenderTransform>
                 <CompositeTransform SkewX="-6.49" TranslateX="-2.218"/>
             </TextBox.RenderTransform>
