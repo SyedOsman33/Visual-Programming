@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Rtmp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rtmp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="801" Width="1351">
+    <Grid HorizontalAlignment="Left" Height="705" VerticalAlignment="Top" Width="1341" Margin="10,36,0,0">
+        <TextBlock x:Name="RtmpClient" HorizontalAlignment="Left" Margin="117,45,0,0" TextWrapping="Wrap" Text="RtmpClient" FontSize="48"  VerticalAlignment="Top" Width="432" Height="76"/>
+        <MediaElement x:Name="mediaElement" x:Uid="MediaMic" HorizontalAlignment="Left" Height="343" Margin="117,126,0,0" VerticalAlignment="Top" Width="1114" RenderTransformOrigin="0.489,0.499"/>
+        <ProgressRing x:Name="progRing" x:Uid="progressRingRtmp" HorizontalAlignment="Left" Margin="376,306,0,0" VerticalAlignment="Top" Height="107" Width="173" Visibility="Collapsed" />
+        <TextBox x:Name="textBox" x:Uid="TextBoxUri" HorizontalAlignment="Left" Margin="117,638,0,-175" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Visibility="Visible" Height="50" Width="484" />
+        <Button x:Name="Send" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="button_Click" Margin="0,0,614.824,22.312" Height="37.304" Width="97.793" RenderTransformOrigin="1.495,0.097" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="18">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0.512" TranslateX="0.25" TranslateY="1.489"/>
+            </Button.RenderTransform>
+
+        </Button>
+    </Grid>
+</Page>
